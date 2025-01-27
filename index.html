@@ -186,6 +186,38 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        @media (max-width: 768px) {
+            .header {
+                height: 20vh;
+            }
+
+            .text h1 {
+                font-size: 6vw;
+            }
+
+            .icons a {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+
+            .carousel-description {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text h1 {
+                font-size: 8vw;
+            }
+
+            .icons a {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+        }
     </style>
     </head>
     <body>
@@ -253,7 +285,7 @@
 
         <footer>
             <p>&copy; <span id="year"></span> Sarah Cosmetics. Designed with ❤
-                by <a href>Swahili Printing Services</a>.</p>
+                by <a href="http://wa.me/+255687636286">Swahili Printing Services</a>.</p>
         </footer>
 
         <script>
@@ -279,8 +311,8 @@
             document.getElementById('prev').addEventListener('click', showPrevSlide);
             document.getElementById('next').addEventListener('click', showNextSlide);
 
-            // Auto carousel functionality
-            setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+            
+            setInterval(showNextSlide, 3000);
         </script>
 
     </body>
